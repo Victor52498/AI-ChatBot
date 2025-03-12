@@ -9,6 +9,6 @@ with st.form("my_form"):
     text = st.text_area("Enter text:", "")
     submmited = st.form_submit_button("Submit")
     if not openai_api_key.startswith("sk-"):
-        st.warning("Please enter a valid OpenAI API Key.", icon="���")
+        st.warning("Please enter a valid OpenAI API Key.")
     if submmited and openai_api_key.startswith("sk-"):
         generate_response(text)
